@@ -1,0 +1,1 @@
+# bcon-26-theoty
