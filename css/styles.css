@@ -40,6 +40,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+button {
+  cursor: pointer;
+}
 
 /* common styles start */
 .section {
@@ -284,6 +287,19 @@ img {
 .about-group {
   flex-basis: 500px;
   margin-left: auto;
+}
+.about-subtitle {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-text {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
 }
 /**
   |============================
