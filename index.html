@@ -27,7 +27,7 @@
 
   <body>
     <!-- Секція хедер -->
-    <header class="page-header">
+    <header class="page-header" id="header">
       <div class="container header-container">
         <a class="header-logo" href="./index.html">
           <img
@@ -41,13 +41,13 @@
         <nav class="header-nav">
           <ul class="header-list list">
             <li class="header-list-item">
-              <a class="header-link link current-link" href="">Главная</a>
+              <a class="header-link link current-link" href="#header">Главная</a>
             </li>
             <li class="header-list-item">
-              <a class="header-link link" href="">Услуги и цены</a>
+              <a class="header-link link" href="#price">Услуги и цены</a>
             </li>
             <li class="header-list-item">
-              <a class="header-link link" href="">Мастера</a>
+              <a class="header-link link" href="#team">Мастера</a>
             </li>
             <li class="header-list-item">
               <a class="header-link link" href="./contatcs.html">Контакты</a>
@@ -65,34 +65,37 @@
     <main>
       <!-- Секція Hero -->
       <section class="hero">
-        <div class="container">
-          <ul class="hero-list list">
-            <li class="hero-item">
-              <a class="hero-link link socials-link" href="">Instagram</a>
-            </li>
-            <li class="hero-item">
-              <a class="hero-link link socials-link" href="">Youtube</a>
-            </li>
+        <div class="container hero-container">
+          <div class="hero-wrapper">
+            <ul class="hero-list list">
+              <li class="hero-item">
+                <a class="hero-link link socials-link" href="">Instagram</a>
+              </li>
+              <li class="hero-item">
+                <a class="hero-link link socials-link" href="">Youtube</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-group">
+            <p class="uppertitle uppertitle-mode-dark" lang="en">A hair salon for men in Kyiv</p>
+            <h1 class="main-title">BarberShop</h1>
+            <p class="hero-desc">
+              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+            </p>
+          </div>
+          <ul class="pagination list">
+            <li class="pagination-item current-slide"></li>
+            <li class="pagination-item"></li>
+            <li class="pagination-item"></li>
           </ul>
 
-          <p class="uppertitle uppertitle-mode-dark" lang="en">A hair salon for men in Kyiv</p>
-          <h1 class="main-title">BarberShop</h1>
-          <p class="hero-desc">
-            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
-          </p>
-
-          <ul class="list">
-            <li>Слайд 1</li>
-            <li>Слайд 2</li>
-            <li>Слайд 3</li>
-          </ul>
-
-          <ul class="list">
-            <li>
-              <button type="button">Назад</button>
+          <ul class="slider-controls list">
+            <li class="slider-controls-item">
+              <button class="slider-controls-btn slider-disable-btn" type="button">Назад</button>
             </li>
-            <li>
-              <button type="button">Вперед</button>
+            <li class="slider-controls-item">
+              <button class="slider-controls-btn" type="button">Вперед</button>
             </li>
           </ul>
         </div>
@@ -132,7 +135,7 @@
       </section>
 
       <!-- Секція Price -->
-      <section class="price section">
+      <section class="price section" id="price">
         <div class="container">
           <p class="uppertitle uppertitle-mode-dark">Проведи время в компании лучших мастеров</p>
           <h2 class="section-title section-title-mode-dark">Услуги и цены</h2>
@@ -187,19 +190,19 @@
         <div class="benefits-container container">
           <ul class="benefits-list list">
             <li class="benefits-item">
-              <p class="benefits-quantity">600 <sup>&#43;</sup></p>
+              <p class="benefits-quantity">600</p>
               <p class="benefits-desc">Довольных клиентов в день</p>
             </li>
             <li class="benefits-item">
-              <p class="benefits-quantity">50 <sup>&#43;</sup></p>
+              <p class="benefits-quantity">50</p>
               <p class="benefits-desc">Наград за отличный сервис</p>
             </li>
             <li class="benefits-item">
-              <p class="benefits-quantity">20 <sup>&#43;</sup></p>
+              <p class="benefits-quantity">20</p>
               <p class="benefits-desc">Лучших мастеров Киева</p>
             </li>
             <li class="benefits-item">
-              <p class="benefits-quantity">100 <sup>&#43;</sup></p>
+              <p class="benefits-quantity">100</p>
               <p class="benefits-desc">Подарков постоянным клиентам</p>
             </li>
           </ul>
@@ -210,15 +213,12 @@
               О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз
               прочитать.
             </p>
-            <!-- <svg class="antena" width="70" height="70">
-              <use href="./images/sprite.svg#icon-antenna"></use>
-            </svg> -->
           </div>
         </div>
       </section>
 
       <!-- Секція Team -->
-      <section class="team section">
+      <section class="team section" id="team">
         <div class="container">
           <p class="uppertitle uppertitle-mode-light">для настоящих ценителей атмосферы</p>
           <h2 class="section-title">Наши мастера</h2>
@@ -465,7 +465,7 @@
           </div>
           <div>
             <h2 class="section-title section-title-mode-dark">Контакты</h2>
-            <address>
+            <address class="contacts-address">
               <ul class="list">
                 <li>
                   <a
@@ -529,5 +529,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="./js/header-scroll.js"></script>
   </body>
 </html>
