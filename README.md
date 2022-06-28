@@ -1,21 +1,16 @@
 # bcon-26-theoty
 
-## Module 05
+## Module 06
 
 ===
 
-- Властивість position: static
-- Відносне позиціонування (position: relative)
-- Властивості координат: top, left, right, bottom
-- Абсолютне позиціонування (position: absolute)
-- Фіксоване позиціонування (position: fixed)
-- Липке позиціонування (position: sticky)
-- Властивість z-index
-- Властивість overflow
-
-===
-
-- 2D-трансформації
-- Перспектива та 3D-трансформації
-- Переходи
-- Анімація
+- Тег form
+- Тег label
+- Тег input
+- Атрибути type тега input і його значення (email, password, radio, checkbox, number, tel, range,
+  date)
+- Атрибути placeholder, checked, name
+- Тег textarea
+- Теги select та optgroup
+- Тег datalist
+- Тег fieldset и <div role="group"></div>

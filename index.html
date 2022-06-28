@@ -457,13 +457,30 @@
 
       <!-- Секція Contacts -->
       <section class="contacts section">
-        <div class="container">
-          <div>
+        <div class="container contacts-container">
+          <div class="contacts-left-side">
             <h2 class="section-title section-title-mode-dark">Онлайн-запись</h2>
-            <form></form>
-            <button class="btn btn-mode-dark" type="button">отправить</button>
+            <form class="contacts-form">
+              <div class="contacts-form-group">
+                <label class="contacts-form-field">
+                  <span class="contacts-form-label">Имя*</span>
+                  <input class="contacts-form-input" type="text" name="user-name" />
+                </label>
+                <label class="contacts-form-field">
+                  <span class="contacts-form-label">Телефон*</span>
+                  <input class="contacts-form-input" type="tel" name="user-phone" />
+                </label>
+              </div>
+
+              <label class="contacts-form-field">
+                <span class="contacts-form-label">сообщение</span>
+                <textarea class="contacts-form-message" name="user-message" rows="5"></textarea>
+              </label>
+
+              <button class="btn btn-mode-dark" type="submit">отправить</button>
+            </form>
           </div>
-          <div>
+          <div class="contacts-right-side">
             <h2 class="section-title section-title-mode-dark">Контакты</h2>
             <address class="contacts-address">
               <ul class="list">
@@ -499,8 +516,8 @@
               </ul>
             </address>
 
-            <h3>время работы</h3>
-            <p>
+            <h3 class="contacts-schedule">время работы</h3>
+            <p class="contacts-desc">
               Ежедневно с
               <time datetime="09:00">9:00</time>
               до
@@ -530,6 +547,121 @@
       </div>
     </footer>
 
+    <!-- Модальне вікно -->
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-close-btn" type="button">X</button>
+        <strong class="modal-title">Оставьте свои данные</strong>
+        <form class="modal-form" name="subscribtion-form" autocomplete="on">
+          <!-- Поле для введення даних -->
+          <div>
+            <label for="user-name">Имя</label>
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Петро Петров"
+              minlength="2"
+            />
+          </div>
+
+          <!-- Пароль -->
+          <label>
+            <span>Пароль</span>
+            <input
+              type="password"
+              name="user-password"
+              minlength="6"
+              maxlength="15"
+              placeholder="a-z*&^%$#0-9"
+            />
+          </label>
+
+          <!-- Пошта -->
+          <label>
+            <span>Почта</span>
+            <input type="email" name="user-email" placeholder="example@mail.com" />
+          </label>
+
+          <!-- Телефон -->
+          <div>
+            <label for="user-phone">Телефон</label>
+            <input type="tel" name="user-phone" id="user-phone" placeholder="+38 099 999 99 99" />
+          </div>
+
+          <!--Радіо кнопки -->
+          <div>
+            <p>Виберите размер</p>
+            <label for="user-size-small">
+              <span>Размер S</span>
+              <input type="radio" name="user-size" id="user-size-small" value="size-s" checked />
+            </label>
+            <label for="user-size-medium">
+              <span>Размер M</span>
+              <input type="radio" name="user-size" id="user-size-medium" value="size-m" />
+            </label>
+            <label for="user-size-large">
+              <span>Размер L</span>
+              <input type="radio" name="user-size" id="user-size-large" value="size-l" />
+            </label>
+          </div>
+
+          <!-- Чекбокс -->
+          <label class="modal-checkbox">
+            <input type="checkbox" name="user-agreement" checked />
+            <span>Даю согласие на обработку данных</span>
+          </label>
+
+          <!-- Поле для введення числових значень -->
+          <label class="modal-checkbox">
+            <span>Выберите количество товара</span>
+            <input type="number" name="user-amount" value="0" step="0.5" min="1" max="10" />
+          </label>
+
+          <!-- Поле для введення повідомлень -->
+          <label>
+            <span>Оставьте свое сообщение</span>
+            <textarea name="user-message" rows="5" placeholder="Оставьте свое сообщение"></textarea>
+          </label>
+
+          <!-- Групи полів для вибору варіанту з випадаючого списку -->
+          <label for="auto-types">Виберите марку авто</label>
+          <select name="user-auto-types" id="auto-types">
+            <optgroup label="German auto">
+              <option value="audi">Audi</option>
+              <option value="peugeot">Opel</option>
+              <option value="bmw">BMW</option>
+            </optgroup>
+            <optgroup label="France auto">
+              <option value="renault">Renault</option>
+              <option value="peugeot">Peugeot</option>
+              <option value="citroen">Citroen</option>
+            </optgroup>
+          </select>
+
+          <!-- Групи полів для вибору варіанту з випадаючого списку
+          із можливістю пошуку -->
+          <label>
+            <input list="auto" type="text" />
+          </label>
+
+          <datalist id="auto">
+            <option value="GE">Audi</option>
+            <option value="GE">Opel</option>
+            <option value="GE">BMW</option>
+            <option value="FR">Renault</option>
+            <option value="FR">Peugeot</option>
+            <option value="FR">Citroen</option>
+          </datalist>
+
+          <!-- Кнопки форми -->
+          <div>
+            <button type="submit">Отправить</button>
+            <button type="reset">Сбросить данные</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="./js/header-scroll.js"></script>
   </body>
 </html>
