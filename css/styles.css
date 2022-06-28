@@ -253,6 +253,8 @@ button {
   height: 4px;
   border-radius: 2px;
   background-color: #ff6c00;
+
+  transition: color var(--anim);
 }
 .header-link:hover,
 .header-link:focus {
