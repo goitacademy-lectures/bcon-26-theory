@@ -635,17 +635,195 @@ button {
   |============================
 */
 .contacts {
-  height: 644px;
   background-color: #191c26;
-  background-image: url(../images/contacts/contacts-bg-1.png);
+  background-image: url(../images/contacts/contacts-bg.png);
 
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top 50% left calc(50% + 312px);
 }
 
+.contacts-container {
+  display: flex;
+}
+
+.contacts-left-side,
+.contacts-right-side {
+  flex-basis: 50%;
+}
+
+.contacts-right-side {
+  padding-left: 100px;
+}
+
+.contacts-form-group {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 44px;
+}
+
+.contacts-form-field:first-child {
+  flex-basis: 270px;
+}
+.contacts-form-field:last-child {
+  flex-basis: 260px;
+}
+
+.contacts-form-field {
+  position: relative;
+}
+
+.contacts-form-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+
+  transition: transform var(--anim), color var(--anim);
+  transform-origin: left center;
+}
+
+.contacts-form-input:focus + .contacts-form-label,
+.contacts-form-input:not(:placeholder-shown) + .contacts-form-label {
+  color: #ffffff;
+  transform: translateY(-10px) scale(0.7);
+}
+
+.contacts-form-input:required + .contacts-form-label::after {
+  content: "\002A";
+  display: inline-block;
+  margin-left: 5px;
+  color: red;
+}
+
+.contacts-form-input {
+  width: 100%;
+  height: 24px;
+
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  outline: transparent;
+
+  padding: 5px;
+  color: #ffffff;
+
+  transition: border-color var(--anim);
+}
+
+.contacts-form-input:not(:placeholder-shown):focus {
+  border-color: #fff;
+}
+
+.contacts-form-input:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+.contacts-form-input:not(:placeholder-shown):valid {
+  border-color: lightgreen;
+}
+
+/* візуальні підказки при заповненні інпутів */
+.info-message,
+.error-message {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(18px);
+
+  font-size: 8px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.05em;
+  opacity: 0;
+  transition: opacity var(--anim), color var(--anim);
+}
+
+.contacts-form-input:focus ~ .info-message {
+  opacity: 1;
+  color: #ff6c00;
+}
+
+.contacts-form-input:not(:placeholder-shown) ~ .info-message {
+  opacity: 0;
+}
+
+.contacts-form-input:not(:placeholder-shown):invalid ~ .error-message {
+  opacity: 1;
+  color: red;
+}
+
+.info-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.error-icon,
+.success-icon {
+  opacity: 0;
+  transition: opacity var(--anim);
+}
+
+.contacts-form-input:not(:placeholder-shown):invalid ~ .info-icon .error-icon {
+  opacity: 1;
+  fill: red;
+}
+.contacts-form-input:not(:placeholder-shown):valid ~ .info-icon .success-icon {
+  opacity: 1;
+  fill: lightgreen;
+}
+/* ========================= */
+
+.contacts-form-message {
+  padding: 10px 5px;
+  width: 100%;
+  height: 76px;
+
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  color: #ffffff;
+
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  resize: none;
+}
+
+.contacts-form-message:not(:placeholder-shown):focus + .contacts-form-label {
+  color: #ffffff;
+  transform: translateY(-10px) scale(0.7);
+}
+.contacts-btn {
+  margin-top: 44px;
+}
+
 .contacts-address {
+  margin-bottom: 70px;
+
   font-style: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contacts-schedule {
+  color: #ffffff;
+}
+
+.contacts-desc {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
@@ -656,7 +834,22 @@ button {
   | footer section
   |============================
 */
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
 
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-list {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 /**
   |============================
   | form

@@ -463,21 +463,46 @@
             <form class="contacts-form">
               <div class="contacts-form-group">
                 <label class="contacts-form-field">
-                  <span class="contacts-form-label">Имя*</span>
-                  <input class="contacts-form-input" type="text" name="user-name" />
+                  <input
+                    class="contacts-form-input"
+                    type="text"
+                    name="user-name"
+                    placeholder=" "
+                    required
+                    minlength="3"
+                  />
+                  <span class="contacts-form-label">Имя</span>
+                  <span class="info-message">Введите имя и фамилию</span>
+                  <span class="error-message">Минимальная длинна 3 символа</span>
+                  <svg class="info-icon" width="15" height="15">
+                    <use class="error-icon" href="./images/sprite.svg#error-icon"></use>
+                    <use class="success-icon" href="./images/sprite.svg#success-icon"></use>
+                  </svg>
                 </label>
                 <label class="contacts-form-field">
-                  <span class="contacts-form-label">Телефон*</span>
-                  <input class="contacts-form-input" type="tel" name="user-phone" />
+                  <input
+                    class="contacts-form-input"
+                    type="tel"
+                    name="user-phone"
+                    placeholder=" "
+                    required
+                  />
+                  <span class="contacts-form-label">Телефон</span>
+                  <span class="info-message">Введите телефон в формате +38 (099) 123 45 67</span>
+                  <span class="error-message">Минимальная длинна 3 символа</span>
+                  <svg class="info-icon" width="15" height="15">
+                    <use class="error-icon" href="./images/sprite.svg#error-icon"></use>
+                    <use class="success-icon" href="./images/sprite.svg#success-icon"></use>
+                  </svg>
                 </label>
               </div>
 
               <label class="contacts-form-field">
-                <span class="contacts-form-label">сообщение</span>
                 <textarea class="contacts-form-message" name="user-message" rows="5"></textarea>
+                <span class="contacts-form-label">сообщение</span>
               </label>
 
-              <button class="btn btn-mode-dark" type="submit">отправить</button>
+              <button class="contacts-btn btn btn-mode-dark" type="submit">отправить</button>
             </form>
           </div>
           <div class="contacts-right-side">
@@ -516,7 +541,7 @@
               </ul>
             </address>
 
-            <h3 class="contacts-schedule">время работы</h3>
+            <h3 class="uppertitle uppertitle-mode-dark contacts-schedule">время работы</h3>
             <p class="contacts-desc">
               Ежедневно с
               <time datetime="09:00">9:00</time>
@@ -530,9 +555,9 @@
 
     <!-- Секція футер -->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <p>&#169; Copyright 2020</p>
-        <ul class="list">
+        <ul class="footer-list list">
           <li>
             <a class="link socials-link" href="" target="_blank" rel="noopener noreferrer"
               >Instagram</a
@@ -662,6 +687,9 @@
         </form>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/inputmask.min.js"></script>
+    <script src="./js/phone-mask.js"></script>
     <script src="./js/header-scroll.js"></script>
   </body>
 </html>
