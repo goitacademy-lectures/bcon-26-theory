@@ -13,7 +13,7 @@
   /* others */
   --items: 1;
   --indent: 30px;
-  --anim: 300ms ease-in-out;
+  --anim: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
