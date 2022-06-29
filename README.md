@@ -1,21 +1,12 @@
 # bcon-26-theoty
 
-## Module 04
+## Module 06
 
 ===
 
-- Типи растрової графіки: jpg, png, webp
-- Контентні та декоративні зображення
-- Властивості bg-color, bg-image, bg-repeat, bg-position, bg-size
-- Багатошаровий фон
-- Псевдоелементи ::before та ::after
-- Градієнти
-- CSS-тіні та властивість box-shadow
-
-===
-
-- Векторна графіка
-- Основні SVG-фігури
-- Способи використання SVG: як img • як фонове зображення • вбудовування inline-svg
-- Атрибут aria-label для елементів без текстового контенту (кнопка-іконка)
-- Створення і робота з SVG-спрайтом
+- Оформлення стану елементів форми
+- Псевдокласи стану: valid/invalid, required/optional, checked, disabled/enabled,
+  in-range/out-of-range
+- Псевдоелемент ::placeholder і псевдоклас :placeholder-shown
+- Комбінування псевдокласів
+- Псевдоклас :focus-within
