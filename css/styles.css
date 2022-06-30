@@ -93,10 +93,10 @@ button {
   background-color: var(--accent-txt-cl);
   color: var(--main-dark-theme);
 }
-.btn-mode-light {
+.btn--mode-light {
   color: var(--main-light-theme);
 }
-.btn-mode-dark {
+.btn--mode-dark {
   color: var(--main-dark-theme);
 }
 .socials-link {
@@ -198,7 +198,7 @@ button {
   | header
   |============================
 */
-.page-header {
+.header {
   position: fixed;
   top: 0;
   left: 50%;
@@ -208,24 +208,24 @@ button {
 
   transition: background-color var(--anim), backdrop-filter var(--anim), box-shadow var(--anim);
 }
-.page-header.js-no-transparency {
+.header.js-no-transparency {
   background-color: rgba(16, 18, 27, 0.4);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 10px rgba(25, 28, 38, 0.4);
 }
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
-.header-logo {
+.header__logo {
   margin-right: 72px;
 }
-.header-list {
+.nav__list {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-.header-link {
+.nav__link {
   display: block;
   padding-top: 52px;
   padding-bottom: 52px;
@@ -238,11 +238,11 @@ button {
 
   transition: color var(--anim);
 }
-.current-link {
+.nav__link--current {
   position: relative;
   color: var(--accent-txt-cl);
 }
-.current-link::after {
+.nav__link--current::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -256,14 +256,14 @@ button {
 
   transition: color var(--anim);
 }
-.header-link:hover,
-.header-link:focus {
+.nav__link:hover,
+.nav__link:focus {
   color: var(--accent-txt-cl);
 }
-.header-group {
+.header__group {
   margin-left: auto;
 }
-.header-contact {
+.header__contact {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -272,7 +272,7 @@ button {
 
   color: var(--main-dark-theme);
 }
-.header-btn {
+.header__btn {
   margin-left: 40px;
 }
 
@@ -380,7 +380,7 @@ button {
   | about
   |============================
 */
-.about-container {
+.about__container {
   display: flex;
 }
 .about-list {
@@ -625,6 +625,10 @@ button {
   | portfolio
   |============================
 */
+.portfolio__uppertitle {
+  margin-bottom: 44px;
+}
+
 .portfolio-list {
   --items: 4;
   --indent: 30px;
@@ -817,6 +821,10 @@ button {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+.contacts-address-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .contacts-schedule {

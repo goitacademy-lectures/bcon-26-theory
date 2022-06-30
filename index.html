@@ -27,36 +27,36 @@
 
   <body>
     <!-- Секція хедер -->
-    <header class="page-header" id="header">
-      <div class="container header-container">
-        <a class="header-logo" href="./index.html">
+    <header class="header" id="header">
+      <div class="container header__container">
+        <a class="logo header__logo" href="./index.html">
           <img
-            class="header-img"
+            class="logo__img"
             src="./images/header/logo.svg"
             alt="Логотип BarberShop"
             width="69"
             height="56"
           />
         </a>
-        <nav class="header-nav">
-          <ul class="header-list list">
-            <li class="header-list-item">
-              <a class="header-link link current-link" href="#header">Главная</a>
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--current link" href="#header">Главная</a>
             </li>
-            <li class="header-list-item">
-              <a class="header-link link" href="#price">Услуги и цены</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="#price">Услуги и цены</a>
             </li>
-            <li class="header-list-item">
-              <a class="header-link link" href="#team">Мастера</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="#team">Мастера</a>
             </li>
-            <li class="header-list-item">
-              <a class="header-link link" href="./contatcs.html">Контакты</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="./contatcs.html">Контакты</a>
             </li>
           </ul>
         </nav>
-        <div class="header-group">
-          <a class="header-contact link" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="header-btn btn btn-mode-dark" type="button">онлайн-запись</button>
+        <div class="header__group">
+          <a class="header__contact link" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="header__btn btn btn--mode-dark" type="button">онлайн-запись</button>
         </div>
       </div>
     </header>
@@ -103,7 +103,7 @@
 
       <!-- Секція About -->
       <section class="about section">
-        <div class="about-container container">
+        <div class="about__container container">
           <ul class="about-list list">
             <li class="about-item">
               <img src="./images/about/img-1.jpg" alt="Бритье бороды" width="270" height="445" />
@@ -129,7 +129,7 @@
               команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
-            <button class="btn btn-mode-light" type="button">онлайн-запись</button>
+            <button class="btn btn--mode-light" type="button">онлайн-запись</button>
           </div>
         </div>
       </section>
@@ -181,7 +181,7 @@
               </ul>
             </li>
           </ul>
-          <button class="price-btn btn btn-mode-dark" type="button">онлайн-запись</button>
+          <button class="price-btn btn btn--mode-dark" type="button">онлайн-запись</button>
         </div>
       </section>
 
@@ -414,18 +414,24 @@
       <!-- Секція Portfolio -->
       <section class="portfolio section">
         <div class="container">
-          <p class="uppertitle uppertitle-mode-light">
+          <p class="portfolio__uppertitle uppertitle uppertitle_mode_light">
+            На латинском языке “барба” означает “борода”
+          </p>
+          <p class="portfolio__uppertitle uppertitle uppertitle--mode-light">
             На латинском языке “барба” означает “борода”
           </p>
           <h2 class="visually-hidden">Примеры работ</h2>
           <ul class="portfolio-list card-set list">
-            <li class="card-set-item">
-              <img
-                src="./images/portfolio/portfolio-1.jpg"
-                alt="Пример работы 1"
-                width="270"
-                height="360"
-              />
+            <li class="portfolio-list__item portfolio-list__item_mb_44 card-set-item">
+              <div>
+                <img
+                  class="portfolio-list__img"
+                  src="./images/portfolio/portfolio-1.jpg"
+                  alt="Пример работы 1"
+                  width="270"
+                  height="360"
+                />
+              </div>
             </li>
             <li class="card-set-item">
               <img
@@ -502,14 +508,14 @@
                 <span class="contacts-form-label">сообщение</span>
               </label>
 
-              <button class="contacts-btn btn btn-mode-dark" type="submit">отправить</button>
+              <button class="contacts-btn btn btn--mode-dark" type="submit">отправить</button>
             </form>
           </div>
           <div class="contacts-right-side">
             <h2 class="section-title section-title-mode-dark">Контакты</h2>
             <address class="contacts-address">
-              <ul class="list">
-                <li>
+              <ul class="contacts-address-list list">
+                <li class="contacts-address-item">
                   <a
                     class="link"
                     href="https://goo.gl/maps/YTrfUZCEC6fcr9nRA"
@@ -522,7 +528,7 @@
                     ул. Васильковая, 7А Киев, 08132
                   </a>
                 </li>
-                <li>
+                <li class="contacts-address-item">
                   <a class="link" href="tel:+380441111111">
                     <svg width="24" height="24">
                       <use href="./images/sprite.svg#icon-phone"></use>
@@ -530,7 +536,7 @@
                     +38 044 111 11 11</a
                   >
                 </li>
-                <li>
+                <li class="contacts-address-item">
                   <a class="link" href="mailto:barbershop@email.com">
                     <svg width="24" height="24">
                       <use href="./images/sprite.svg#icon-mail"></use>
