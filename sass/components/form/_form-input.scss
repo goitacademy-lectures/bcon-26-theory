@@ -1,0 +1,30 @@
+.contacts-form-input {
+  width: 100%;
+  height: 24px;
+
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  outline: transparent;
+
+  padding: 5px;
+  color: #ffffff;
+
+  transition: border-color var(--anim);
+
+  &:not(:placeholder-shown):focus {
+    border-color: #fff;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    border-color: red;
+  }
+
+  &:not(:placeholder-shown):valid {
+    border-color: lightgreen;
+  }
+}

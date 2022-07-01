@@ -1,0 +1,75 @@
+/**
+  |============================
+  | team
+  |============================
+*/
+.team {
+  background-color: #f7f7f7;
+}
+.team-list {
+  --items: 3;
+  --indent: 30px;
+}
+
+.team-item {
+  background-color: #f7f7f7;
+}
+
+.team-wrapper {
+  padding-top: 30px;
+}
+.team-subtitle {
+  margin-bottom: 8px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+.team-position {
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  /* color: #303030; */
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* .team-link:hover,
+.team-link:focus {
+  color: #ff6c00;
+} */
+
+/* .team-icon {
+  fill: currentColor;
+} */
+
+.team-icon {
+  fill: #303030;
+  transition: fill var(--anim);
+}
+
+.team-link:hover .team-icon,
+.team-link:focus .team-icon {
+  fill: #ff6c00;
+}

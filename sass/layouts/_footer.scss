@@ -1,0 +1,21 @@
+/**
+  |============================
+  | footer section
+  |============================
+*/
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-list {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}

@@ -1,0 +1,76 @@
+/**
+  |============================
+  | price
+  |============================
+*/
+.price {
+  /* background-image: url(https://images.unsplash.com/photo-1655769135684-e35826d4859d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed; */
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #111319;
+  background-image: linear-gradient(
+      rgb(255, 0, 0, 0.3) 100px,
+      rgba(0, 0, 255, 0.3) 100px,
+      rgba(0, 0, 255, 0.3) 200px,
+      rgba(0, 255, 0, 0.3)
+    ),
+    url(../images/price/price-bg.png);
+  background-image: url(../images/price/price-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.price-list {
+  display: flex;
+  color: #9da4bd;
+  margin-bottom: 50px;
+}
+.price-item {
+  flex-basis: 50%;
+}
+.price-item:first-child {
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.price-item:last-child {
+  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+.price-inner-list {
+  padding: 30px 40px;
+}
+.price-inner-item {
+  display: flex;
+  align-items: baseline;
+}
+.price-inner-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.price-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Оформлення риски в прайсі між послугою та ціною */
+.price-inner-item::before {
+  content: "";
+  display: inline-block;
+
+  flex-grow: 1;
+
+  /* width: 100%; */
+  height: 1px;
+  margin-left: 6px;
+  margin-right: 6px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+.price-inner-txt {
+  flex-shrink: 0;
+}
+.price-inner-txt:first-child {
+  order: -1;
+}

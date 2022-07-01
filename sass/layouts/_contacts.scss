@@ -1,0 +1,55 @@
+/**
+  |============================
+  | contacts section
+  |============================
+*/
+.contacts {
+  background-color: #191c26;
+  background-image: url(../images/contacts/contacts-bg.png);
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top 50% left calc(50% + 312px);
+}
+
+.contacts-container {
+  display: flex;
+}
+
+.contacts-left-side,
+.contacts-right-side {
+  flex-basis: 50%;
+}
+
+.contacts-right-side {
+  padding-left: 100px;
+}
+
+.contacts-btn {
+  margin-top: 44px;
+}
+
+.contacts-address {
+  margin-bottom: 70px;
+
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contacts-address-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-schedule {
+  color: #ffffff;
+}
+
+.contacts-desc {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}

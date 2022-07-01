@@ -1,0 +1,16 @@
+.section-title {
+  margin-bottom: 44px;
+
+  // font-weight: 700;
+  // font-size: 42px;
+  // line-height: 49px;
+  // letter-spacing: 0.05em;
+
+  @include fonts(700, 42px, 49px);
+}
+.section-title-mode-light {
+  color: #303030;
+}
+.section-title-mode-dark {
+  color: #ffffff;
+}

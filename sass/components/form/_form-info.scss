@@ -1,0 +1,50 @@
+/* візуальні підказки при заповненні інпутів */
+.info-message,
+.error-message {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(18px);
+
+  font-size: 8px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.05em;
+  opacity: 0;
+  transition: opacity var(--anim), color var(--anim);
+}
+
+.contacts-form-input:focus ~ .info-message {
+  opacity: 1;
+  color: #ff6c00;
+}
+
+.contacts-form-input:not(:placeholder-shown) ~ .info-message {
+  opacity: 0;
+}
+
+.contacts-form-input:not(:placeholder-shown):invalid ~ .error-message {
+  opacity: 1;
+  color: red;
+}
+
+.info-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.error-icon,
+.success-icon {
+  opacity: 0;
+  transition: opacity var(--anim);
+}
+
+.contacts-form-input:not(:placeholder-shown):invalid ~ .info-icon .error-icon {
+  opacity: 1;
+  fill: red;
+}
+.contacts-form-input:not(:placeholder-shown):valid ~ .info-icon .success-icon {
+  opacity: 1;
+  fill: lightgreen;
+}

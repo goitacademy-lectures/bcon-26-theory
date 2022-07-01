@@ -1,0 +1,49 @@
+/**
+  |============================
+  | hero section
+  |============================
+*/
+.hero {
+  position: relative;
+  max-width: 1280px;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #191c26;
+  background-image: url(../images/hero/hero-bg.jpg),
+    linear-gradient(to right, #fff 155px, #191c26 155px);
+  background-repeat: no-repeat;
+  background-position: top right, center;
+}
+.hero-container {
+  display: flex;
+}
+.hero-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+.hero-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transform: translateY(-40px) rotate(270deg);
+  transform-origin: top left;
+}
+.hero-list::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+.hero-group {
+  width: 500px;
+  padding-top: 272px;
+  padding-bottom: 206px;
+}
+.hero-desc {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}

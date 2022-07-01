@@ -1,0 +1,28 @@
+.contacts-form-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+
+  transition: transform var(--anim), color var(--anim);
+  transform-origin: left center;
+
+  .contacts-form-input:focus + &,
+  .contacts-form-input:not(:placeholder-shown) + & {
+    color: #ffffff;
+    transform: translateY(-10px) scale(0.7);
+  }
+
+  .contacts-form-input:required + &::after {
+    content: "\002A";
+    display: inline-block;
+    margin-left: 5px;
+    color: red;
+  }
+}
