@@ -1,0 +1,13 @@
+.socials-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--main-light-theme);
+  transition: color var(--anim);
+}
+.socials-link:hover,
+.socials-link:focus {
+  color: var(--accent-txt-cl);
+}

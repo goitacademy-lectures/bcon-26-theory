@@ -1,12 +1,5 @@
-# bcon-26-theoty
+# bcon-26-theory
 
-## Module 06
+## Module 07 BEM
 
 ===
-
-- Оформлення стану елементів форми
-- Псевдокласи стану: valid/invalid, required/optional, checked, disabled/enabled,
-  in-range/out-of-range
-- Псевдоелемент ::placeholder і псевдоклас :placeholder-shown
-- Комбінування псевдокласів
-- Псевдоклас :focus-within

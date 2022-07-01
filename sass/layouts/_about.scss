@@ -1,0 +1,29 @@
+/**
+  |============================
+  | about
+  |============================
+*/
+.about__container {
+  display: flex;
+}
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+.about-group {
+  flex-basis: 500px;
+  margin-left: auto;
+}
+.about-subtitle {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-text {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}

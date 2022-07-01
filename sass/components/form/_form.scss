@@ -1,0 +1,16 @@
+.contacts-form-group {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 44px;
+}
+
+.contacts-form-field {
+  position: relative;
+
+  &:first-child {
+    flex-basis: 270px;
+  }
+  &:last-child {
+    flex-basis: 260px;
+  }
+}

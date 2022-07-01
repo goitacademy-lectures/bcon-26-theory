@@ -1,0 +1,16 @@
+// variables
+@import "./utils/vars";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+// vendors
+@import "./vendors/module";
+
+// base styles
+@import "./base/module";
+
+// components styles
+@import "./components/module";
+
+// layouts styles
+@import "./layouts/module";

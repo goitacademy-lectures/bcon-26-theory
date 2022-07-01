@@ -1,0 +1,26 @@
+.btn {
+  max-width: 200px;
+  min-width: 160px;
+  min-height: 40px;
+  padding: 11px 19px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  cursor: pointer;
+
+  transition: color var(--anim), background-color var(--anim);
+}
+
+@mixin fonts($fw, $fs, $lh, $ls: 0.05em) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}

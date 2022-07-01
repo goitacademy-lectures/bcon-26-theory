@@ -1,0 +1,65 @@
+/**
+  |============================
+  | benefits
+  |============================
+*/
+.benefits-container {
+  display: flex;
+}
+.benefits-group {
+  flex-basis: 500px;
+  margin-left: auto;
+}
+
+.benefits-list {
+  width: 370px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: 0 auto;
+}
+
+.benefits-item {
+  width: 170px;
+  min-height: 133px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.benefits-item:nth-child(2n + 1) {
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.benefits-quantity {
+  position: relative;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #303030;
+}
+
+.benefits-quantity::after {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  content: "\002B";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #ff6c00;
+}
+.benefits-desc {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #303030;
+}

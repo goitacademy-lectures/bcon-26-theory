@@ -1,0 +1,31 @@
+// .btn {
+//   max-width: 200px;
+//   min-width: 160px;
+//   min-height: 40px;
+//   padding: 11px 19px;
+//   font-family: inherit;
+//   font-weight: 600;
+//   font-size: 12px;
+//   line-height: 1.33;
+//   letter-spacing: 0.09em;
+//   text-transform: uppercase;
+
+//   background-color: transparent;
+//   border: 1px solid #ff6c00;
+//   border-radius: 25px;
+//   cursor: pointer;
+
+//   transition: color var(--anim), background-color var(--anim);
+// }
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-txt-cl);
+  color: var(--main-dark-theme);
+}
+.btn--mode-light {
+  @extend %button;
+  color: var(--main-light-theme);
+}
+.btn--mode-dark {
+  color: var(--main-dark-theme);
+}
