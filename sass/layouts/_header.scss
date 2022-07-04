@@ -13,6 +13,11 @@
 
   transition: background-color var(--anim), backdrop-filter var(--anim), box-shadow var(--anim);
 
+  @media screen and (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   &.js-no-transparency {
     background-color: rgba(16, 18, 27, 0.4);
     backdrop-filter: blur(10px);
@@ -27,6 +32,10 @@
 
 .header__logo {
   margin-right: 72px;
+}
+
+.nav {
+  display: none;
 }
 
 .nav__list {
@@ -75,6 +84,7 @@
 }
 
 .header__group {
+  display: none;
   margin-left: auto;
 }
 

@@ -1,0 +1,62 @@
+@media screen and (max-width: 500px) {
+  body {
+    background-color: teal;
+  }
+}
+
+/*
+all
+screen
+print
+*/
+
+body {
+  font-size: 12px;
+}
+
+/* @media screen and (min-width: 500px) { */
+body {
+  font-size: 20px;
+}
+/* } */
+
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  /* .class{
+
+  } */
+}
+
+@media screen and (max-width: 480px) and (min-width: 768px) {
+  /* виконається тільки у тому випадку, коли всі умови одночасно пройдуть перевірку */
+}
+
+@media screen and (max-width: 480px), (min-width: 768px) {
+  /* стилі застосуються у випадку, коли друга або третя медіафункції пройдуть перевірку */
+}
+
+/* виключити проміжок від 400 до 800 */
+@media screen and (max-width: 400px) and (min-width: 800px) {
+}
+
+/*
+breakpoints = точки перелому макету
+
+mobile - до 480рх
+tablet - від 768рх
+desktop - від 1280px
+
+*/
+
+/*
+логічні оператори
+not
+only
+and
+or
+*/

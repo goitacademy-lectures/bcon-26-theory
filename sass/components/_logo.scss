@@ -1,0 +1,11 @@
+.logo {
+  color: #fff;
+
+  @media screen and (min-width: 768px) {
+    color: #303030;
+  }
+}
+
+.logo__icon {
+  fill: currentColor;
+}

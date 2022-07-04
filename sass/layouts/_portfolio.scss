@@ -8,6 +8,14 @@
 }
 
 .portfolio-list {
-  --items: 4;
+  --items: 1;
   --indent: 30px;
+
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+
+  @media screen and (min-width: 1280px) {
+    --items: 4;
+  }
 }

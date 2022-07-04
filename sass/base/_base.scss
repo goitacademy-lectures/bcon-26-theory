@@ -6,4 +6,8 @@ body {
   font-family: var(--main-font), sans-serif;
   font-size: 18px;
   line-height: 1.67;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }

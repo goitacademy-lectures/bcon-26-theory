@@ -1,5 +1,5 @@
 .container {
-  width: 1200px;
+  max-width: 448px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -7,4 +7,12 @@
 
   // outline: 2px solid red;
   // outline-offset: -2px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1200px;
+  }
 }

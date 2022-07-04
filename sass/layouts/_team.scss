@@ -6,13 +6,27 @@
 .team {
   background-color: #f7f7f7;
 }
+.team-container {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    max-width: 480px;
+  }
+}
 .team-list {
-  --items: 3;
-  --indent: 30px;
+  --items: 1;
+  --indent: 64px;
+
+  @media screen and (min-width: 1280px) {
+    --items: 3;
+    --indent: 30px;
+  }
 }
 
 .team-item {
   background-color: #f7f7f7;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    max-width: 450px;
+  }
 }
 
 .team-wrapper {
