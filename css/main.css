@@ -673,6 +673,11 @@ label {
   border: none;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
 
 .mobile-menu-icon-menu {
   opacity: 1;
@@ -705,6 +710,11 @@ label {
   pointer-events: none;
   -webkit-transition: visibility var(--anim), opacity var(--anim);
   transition: visibility var(--anim), opacity var(--anim);
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 .mobile-menu.is-open {
   opacity: 1;
@@ -1273,13 +1283,14 @@ label {
 .price-list {
   padding: 30px;
   margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 1.4285714286;
+  letter-spacing: 0.02em;
   color: #9da4bd;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   .price-list {
-    font-size: 14px;
-    line-height: 1.4285714286;
-    letter-spacing: 0.02em;
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {

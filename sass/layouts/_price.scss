@@ -53,12 +53,13 @@
   padding: 30px;
   margin-bottom: 50px;
 
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  letter-spacing: 0.02em;
   color: #9da4bd;
 
-  @media screen and (max-width: 767px) {
-    font-size: 14px;
-    line-height: calc(20 / 14);
-    letter-spacing: 0.02em;
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {

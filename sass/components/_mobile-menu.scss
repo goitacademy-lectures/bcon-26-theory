@@ -12,6 +12,10 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mobile-menu-icon-menu {
@@ -49,6 +53,10 @@
   pointer-events: none;
 
   transition: visibility var(--anim), opacity var(--anim);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 
   &.is-open {
     opacity: 1;
